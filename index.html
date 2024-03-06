@@ -19,18 +19,47 @@
     <body>
         <h3>Come and order</h3>
         <p>Choose your type of pizza</p>
-        <img src="images/pepperoni.jpg" alt="Pepperoni pizza" onclick="openModal('Pepperoni Pizza')">
-        <img src="images/salami.jpg" alt="Salami Pizza" onclick="openModal('Salami Pizza')">
-        <img src="images/cheese.jpg" alt="Cheese Pizza" onclick="openModal('Cheese Pizza')">
-        <img src="images/meat.jpg" alt="Meatlovers Pizza" onclick="openModal('Meatlovers Pizza')">
-        <img src="images/hawaii.jpg" alt="Hawaiian Pizza" onclick="openModal('Hawaiian Pizza')">
-        <img src="images/hac.jpg" alt="Ham and Cheese Pizza" onclick="openModal('Ham and Cheese Pizza')">
-        
+        <button onclick="openModal('Pepperoni Pizza')">
+        <img src="images/pepperoni.jpg" alt="Pepperoni pizza">
+        <button>
+        <p style="color: black">Pepperoni Pizza</p>
+        <button onclick="openModal('Salami Pizza')">
+        <img src="images/salami.jpg" alt="Salami Pizza">
+        </button>
+        <p style="color: black">Salami Pizza</p>
+        <button onclick="openModal('Cheese Pizza')">
+        <img src="images/cheese.jpg" alt="Cheese Pizza">
+        </button>
+        <p style="color: black">Cheese Pizza</p>
+        <button onclick="openModal('Meatlovers Pizza')">
+        <img src="images/meat.jpg" alt="Meatlovers Pizza">
+        </button>
+        <p style="color: black">Meatlovers Pizza</p>
+        <button onclick="openModal('Hawaiian Pizza')">
+        <img src="images/hawaii.jpg" alt="Hawaiian Pizza">
+        </button>
+        <p style="color: black">Hawaiian Pizza</p>
+        <button onclick="openModal('Ham and Cheese Pizza')">
+        <img src="images/hac.jpg" alt="Ham and Cheese Pizza">
+        </button>
+        <p style="color: black">Ham and Cheese Pizza</p>
+
         <modal id="orderModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times</span>
                 <h3 id="pizzaTitle"></h3>
-                <p>This is no</p>
+
+                <form>
+                    <label for="topping">Toppings:</label>
+                    <select id="topping" multiple>
+                        <option value="pepperoni">pepperoni</option>
+                        <option value="salami">salami</option>
+                        <option value="mushroom">mushroom</option>
+                        <option value="anchovy">anchovy</option>
+                        <option value="pineapple">pineapple</option>
+                        <option value="beans">beans</option>
+                    </select>
+                </form>
             </div>
         </modal>
 
