@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+    </head>
+    <body>
+
+        <form id="register">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="text" id="password">
+
+            <button type="button" onclick="checkUsernameAvailability()">Check availability</button>
+            <button type="button" onclick="register()">Register</button>
+        </form>
+
+        <script src="register.js" defer></script>
+    </body>
+</html>
