@@ -58,13 +58,15 @@
         </modal>
 
         <script>
-            function openModal(pizzaTitle) {
-                document.getElementById('pizzaTitle').innerHTML = pizzaTitle
-                document.getElementById('orderModal').style.display = 'block'
-            }
+           document.addEventListener('DOMContentLoaded', function() { 
+                function openModal(pizzaTitle) {
+                        document.getElementById('pizzaTitle').innerHTML = pizzaTitle
+                        document.getElementById('orderModal').style.display = 'block'
+                    }
             function closeModal() {
                 document.getElementById('orderModal').style.display = 'none' 
             }
+        })
         </script>
     </body>
 </html>
